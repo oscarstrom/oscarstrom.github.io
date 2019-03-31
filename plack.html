@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plack</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:rgb(112,128,144);">
+  <div id="mobile"class="container">
+    <div class="row">
+      <div class="col-sm-12" >
+<p style="align:center;">Currently unsupported resolution, please rescale your browser!</p>
+      </div>
+    </div>
+  </div>
+<div id="main"class="container">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" >
+      <div id="strip3" style="background-color:rgb(112,128,144);width:100%;height:20px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" style="background-color:white;">
+      <div class="col-sm-3">
+        <div id="introtext" class="content" style="width:100%;background-color:#ec407a;margin-bottom:20px;margin-top:20px;">
+          <p id="introtext" style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Plack</b></p>
+          <p id ="iconspan" style="text-align:center;"><i id ="icon" class="fas fa-mobile-alt" style="color:white;"></i></p>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;">Plack</h3>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;"><b>A forum for students to ask questions and create study groups</b></br>
+Only functions in mobile browsers
+</br>
+        </p>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">
+          URL:
+          <a href="https://plack-204e7.firebaseapp.com/" style="color:#ec407a;">Plack</a>
+                  <br/>
+                  Role: Developer
+                  <br/>
+                  For: Mobile development with web technologies
+                  <br/>
+                  Date: 2017-06-12
+        </p>
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" >
+      <div id="strip" style="background-color:rgb(112,128,144);width:100%;height:4px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" style="padding:0px;">
+      <div style="background-color:white;width:100%;height:5px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" style="background-color:white;">
+      <div class="col-sm-12" style=";padding-left:0px;padding-right:0px;">
+        <div class="col-sm-3">
+          <img src="plack.png" alt="carbonprint" style="width:100%;margin-top:20px;margin-bottom:20px;">
+        </div>
+        <div class="col-sm-9">
+        <div style="width:100%;margin-bottom:5px;margin-top:15px;padding-top:2px;">
+          <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;margin-top:0px;">About</h3>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">Plack was created in the course 'Mobile development with web technologies'.</br> Its a forum with an interface inspired by the application 'Jodel'. In plack, students can ask and answer questions anonymously.
+        </p>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">The app also has google maps integration where users can create study groups that other users can see on the map
+        </p>
+
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">The app was created with Angular.js and Apache Cordova and implements Google Maps API
+        </p>
+        <div style="margin-top: 4px;margin-bottom:10px;height: 2px;width:100%;background-color:#ec407a;"></div>
+        <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">Apache Cordova</span></button> <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">Angular.js</span></button>
+          <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">JavaScript</span></button>
+      </div>
+    </div>
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  </div>
+
+
+</body>
+<script>
+function bgChange(bg, elemen, bole) {
+  document.body.style.background = bg;
+  document.getElementById('strip').style.backgroundColor=bg;
+  document.getElementById('strip2').style.backgroundColor=bg;
+  document.getElementById('strip3').style.backgroundColor=bg;
+  document.getElementById('strip5').style.backgroundColor=bg;
+  if (bole==0) {
+    elemen.style.marginTop="5px";
+}
+if (bole==1) {
+  elemen.style.marginTop="15px";
+}
+
+
+}
+
+function email() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+
+
+
+</script>
+
+<style>
+#icon {
+font-size: 60px;
+}
+button{
+background-color:#ec407a;
+color:white;
+pointer-events: none;
+border: none;
+}
+
+#mobile {
+display:none;
+}
+
+#iconspan {
+margin-top:30%;
+}
+
+#iconspan2 {
+margin-top:30%;
+}
+
+#icongi{
+    font-size:36px;
+    margin-top:34px;
+}
+
+#iconfb{
+    font-size:36px;
+    margin-top:34px;
+}
+
+#iconsc{
+    font-size:36px;
+    margin-top:34px;
+}
+
+#iconli{
+    font-size:36px;
+    margin-top:34px;
+}
+
+.content{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    height:191.426px;
+}
+
+.placeholder{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.home{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.contenttext{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    height:191.426px;
+}
+
+body {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
+
+.marquee {
+
+line-height: 15px;
+color: gray;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee span {
+  display: inline-block;
+  padding-right: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(100%, 0); }
+}
+
+#strip {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#strip1 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#strip2 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+
+#strip3 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#strip5 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#icongi:hover {
+    color:#6e5494
+}
+
+#email:hover {
+    color:#3C5A99;
+    cursor:pointer;
+}
+
+#iconli:hover {
+    color:#0077b5
+}
+
+#iconfb:hover {
+    color:#3C5A99
+}
+
+#iconsc:hover {
+    color:#ff7700
+}
+
+@media screen and (max-width: 1200px) {
+  #icongi{
+      font-size:30px;
+      margin-top:20px;
+  }
+
+  #iconfb{
+      font-size:30px;
+      margin-top:20px;
+  }
+
+  #iconsc{
+      font-size:30px;
+      margin-top:20px;
+  }
+
+  #iconli{
+      font-size:30px;
+      margin-top:20px;
+  }
+
+  #icon {
+font-size: 50px;
+  }
+
+  #iconspan {
+  margin-top:25%;
+  }
+
+  #iconspan2 {
+  margin-top:25%;
+  }
+
+  #introtext {
+      font-size: 11px
+  }
+
+  #introhead{
+      font-size: 14px
+  }
+
+  #contenthead{
+      margin-top: 5px;
+      margin-bottom:5px;
+      font-size: 18px
+  }
+
+  #contentheadme{
+      margin-top: 5px;
+      margin-bottom:5px;
+      font-size: 18px
+  }
+
+  .content{
+      height:150.900px
+  }
+
+  .contenttext{
+      height:150.900px
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  #introspan1{
+display:none;
+  }
+
+  #icon {
+font-size: 40px;
+  }
+
+  #quickfix {
+margin-bottom: 3px;
+  }
+
+  #iconspan {
+  margin-top:20%;
+  }
+
+  #iconspan2 {
+  margin-top:0%;
+  }
+
+#introtext {
+    margin-bottom: 0px
+}
+
+#introhead{
+    margin-bottom: 5px
+}
+
+#icongi{
+    font-size: 20px;
+    margin-top:4px;
+}
+
+#iconfb{
+    font-size: 20px;
+    margin-top:4px;
+}
+
+#iconsc{
+    font-size: 20px;
+    margin-top:4px;
+}
+
+#iconli{
+    font-size: 20px;
+    margin-top:4px;
+}
+
+.content{
+    height:106.325px
+}
+.contenttext{
+    height:106.325px
+}
+
+}
+
+@media screen and (max-width: 767px) {
+  #main{
+      display:none;
+  }
+
+  #mobile {
+  display:inline;
+  }
+
+}
+
+
+
+</style>
+</html>

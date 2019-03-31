@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:rgb(112,128,144);">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" >
+      <div id="strip3" style="background-color:rgb(112,128,144);width:100%;height:20px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" style="background-color:white;">
+      <div class="col-sm-3">
+        <img src="albumtemp.PNG" alt="Profile" id="profilepic"style="width:100%;height:100%;margin-top:20px;margin-bottom:20px;">
+      </div>
+      <div class="col-sm-9">
+        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;">Hello!</h3>
+        <p id="introtext"style="font-family: 'Open Sans', sans-serif;">My name is Oscar and I am a master student in Media Technology at KTH!</p>
+        <p id="introtext"style="font-family: 'Open Sans', sans-serif;">I'm a fullstack developer with focus on javascript and webbdevelopement.</p>
+        <p id="introtext"style="font-family: 'Open Sans', sans-serif;">Check out some of my projects below!</p>
+        <div class="col-sm-1" style="padding-left:0px;"><i class="fab fa-git-square" id="icongi"style="font-size:36px"></i></div>
+        <div class="col-sm-1" style="padding-left:0px;"><i class="fab fa-linkedin" id="iconli" style="font-size:36px"></i></div>
+        <div class="col-sm-1" style="padding-left:0px;"><i class="fab fa-facebook-square" id="iconfb" style="font-size:36px"></i></div>
+        <div class="col-sm-1" style="padding-left:0px;"><i class="fab fa-soundcloud" id="iconsc" style="font-size:36px"></i></div>
+
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" >
+      <div id="strip" style="background-color:rgb(112,128,144);width:100%;height:4px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" style="padding:0px;">
+      <div style="background-color:white;width:100%;height:5px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" id="contentselector"style="background-color:white;">
+      <div class="col-sm-3" style="padding-bottom:15px" id="missionemissionsm">
+        <div id="introtext" class="content" style="width:100%;background-color:#c0ca33;margin-bottom:5px;margin-top:15px;" onmouseover="bgChange(this.style.backgroundColor, this,0);" onmouseout="bgChange('rgb(112,128,144)', this, 1)" onclick="missionemission();">
+          <p style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Mission Emission</b></p>
+          <p style="text-align:center;margin-top:30%"><i class="fa fa-ship" style="font-size:60px;color:white;"></i></p>
+        </div>
+      </div>
+      <div class="col-sm-3" style="padding-bottom:15px" id="navigatesm">
+        <div id="introtext" class="content" style="width:100%;background-color:#00bcd4;margin-top:15px;margin-bottom:5px;" onmouseover="bgChange(this.style.backgroundColor, this,0);" onmouseout="bgChange('rgb(112,128,144)', this, 1)">
+          <p style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Navigate</b></p>
+          <p style="text-align:center;margin-top:30%"><i class="fas fa-map-marked-alt" style="font-size:60px;color:white;"></i></p>
+        </div>
+      </div>
+      <div class="col-sm-3" style="padding-bottom:15px" id="carbonprintsm">
+        <div class="content" style="width:100%;background-color:#ffa726;margin-top:15px;margin-bottom:5px;" onmouseover="bgChange(this.style.backgroundColor, this,0);" onmouseout="bgChange('rgb(112,128,144)', this, 1)">
+          <p id="introtext" style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Carbonprint</b></p>
+          <p style="text-align:center;margin-top:30%"><i class="fas fa-cloud" style="font-size:60px;color:white;"></i></p>
+        </div>
+      </div>
+      <div class="col-sm-3" style="padding-bottom:15px" id="placksm">
+        <div class="content" style="width:100%;background-color:#ec407a;margin-top:15px;margin-bottom:5px;" onmouseover="bgChange(this.style.backgroundColor, this,0);" onmouseout="bgChange('rgb(112,128,144)', this, 1)" >
+          <p id="introtext" style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Plack</b></p>
+          <p style="text-align:center;margin-top:30%"><i class="fas fa-mobile-alt" style="font-size:60px;color:white;"></i></p>
+        </div>
+      </div>
+      <div class="col-sm-12" style="display:none;padding-left:0px;padding-right:0px;" id="missionemission">
+        <div class="col-sm-3" style="padding-bottom:15px;cursor:pointer;" onmouseover="showhome();" onmouseout="hidehome();" onclick="home();">
+          <div class="contenttext" style="width:100%;background-color:#c0ca33;margin-bottom:5px;margin-top:15px;">
+            <p id="introtext" style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><span class="placeholder"><b>Mission Emission</b></span><span class="home" style="display:none;"><b>Projects</br></b></span></p>
+            <p style="text-align:center;margin-top:30%"><span class="placeholder"><i class="fa fa-ship" style="font-size:60px;color:white;"></i></span><span class="home" style="display:none;"><i class="fas fa-home" style="font-size:60px;color:white;"></i></span></p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+        <div class="contenttext" style="width:100%;margin-bottom:5px;margin-top:15px;padding-top:2px;">
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;"><b>Visualization of CO2 emission data from cargo ships</b></br>
+A collaboration with Stockholm Environmental Institute
+        </p>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">
+          URL: <a href="https://fnoren17.github.io/infovis18/" style="color:#c0ca33">Mission Emission</a>
+                  <br/>
+                  Role: Front-End Developer / Evaluator
+                  <br/>
+                  For: DH2321 Information Visualization KTH
+                  <br/>
+                  Date: 2018-04-15
+                  <br/>
+
+        </p>
+      </div>
+    </div>
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8" >
+      <div id="strip2" style="background-color:rgb(112,128,144);width:100%;height:4px;">
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8" id="strip5" style="padding:0px;background-color:rgb(112,128,144)">
+        <div class="col-sm-6" style="padding-top:20px">
+
+            <span style="padding-top:20px;padding-left:15px;color:white;font: 400 100px/1.0 'Just Another Hand', Helvetica, sans-serif;font-size:40px;" display="inline">Send me an
+              <span id="email" onclick="email();">email!</span></span>
+
+            <input type="text" value="oscarstrom1995@gmail.com" id="myInput" style="display:none">
+        </div>
+        <!-- <div class="col-sm-6">
+          <span class="marquee"><span><img src="sea-ship-with-containers.png" alt="cargo" style="width:36px;filter: invert(100%);"></span></span>
+        </div> -->
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+  </div>
+
+
+</body>
+<script>
+function bgChange(bg, elemen, bole) {
+  document.body.style.background = bg;
+  document.getElementById('strip').style.backgroundColor=bg;
+  document.getElementById('strip2').style.backgroundColor=bg;
+  document.getElementById('strip3').style.backgroundColor=bg;
+  document.getElementById('strip5').style.backgroundColor=bg;
+  if (bole==0) {
+    elemen.style.marginTop="5px";
+}
+if (bole==1) {
+  elemen.style.marginTop="15px";
+}
+
+
+}
+
+function email() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function home() {
+  document.getElementsByClassName('contenttext')[0].style.opacity=0;
+  document.getElementsByClassName('contenttext')[1].style.opacity=0;
+  document.getElementsByClassName('contenttext')[2].style.opacity=0;
+  setTimeout(home3, 101);
+}
+
+function home2() {
+  document.getElementsByClassName('contenttext')[0].style.opacity=100;
+  document.getElementsByClassName('contenttext')[1].style.opacity=100;
+  document.getElementsByClassName('contenttext')[2].style.opacity=100;
+  document.getElementById('missionemission').style.display="none";
+  //setTimeout(home3, 101);
+}
+
+function home3() {
+  document.getElementsByClassName('content')[0].style.opacity=100;
+  document.getElementsByClassName('content')[1].style.opacity=100;
+  document.getElementsByClassName('content')[2].style.opacity=100;
+  document.getElementsByClassName('content')[3].style.opacity=100;
+}
+
+function missionemission() {
+document.getElementsByClassName('content')[0].style.opacity=0;
+document.getElementsByClassName('content')[1].style.opacity=0;
+document.getElementsByClassName('content')[2].style.opacity=0;
+document.getElementsByClassName('content')[3].style.opacity=0;
+setTimeout(missionemission2, 101);
+}
+function missionemission2() {
+document.getElementById('navigatesm').style.display="none";
+document.getElementById('carbonprintsm').style.display="none";
+document.getElementById('placksm').style.display="none";
+document.getElementById('missionemissionsm').style.display="none";
+document.getElementById('missionemission').style.display="inline";
+setTimeout(missionemission3, 101);
+}
+function missionemission3() {
+document.getElementsByClassName('contenttext')[0].style.opacity=100;
+document.getElementsByClassName('contenttext')[1].style.opacity=100;
+document.getElementsByClassName('contenttext')[2].style.opacity=100;
+}
+function showhome() {
+  document.getElementsByClassName('placeholder')[0].style.display="none";
+  document.getElementsByClassName('placeholder')[1].style.display="none";
+  document.getElementsByClassName('home')[0].style.display="inline";
+  document.getElementsByClassName('home')[1].style.display="inline";
+}
+
+function hidehome() {
+  document.getElementsByClassName('placeholder')[0].style.display="inline";
+  document.getElementsByClassName('placeholder')[1].style.display="inline";
+  document.getElementsByClassName('home')[0].style.display="none";
+  document.getElementsByClassName('home')[1].style.display="none";
+}
+
+</script>
+
+<style>
+.content{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    height:191.426px;
+    cursor: pointer;
+}
+
+.placeholder{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.home{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.contenttext{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    height:191.426px;
+    opacity:0;
+}
+
+body {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
+
+.marquee {
+
+line-height: 15px;
+color: gray;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee span {
+  display: inline-block;
+  padding-right: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(100%, 0); }
+}
+
+#strip {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#strip1 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#strip2 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+
+#strip3 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#strip5 {
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+#icongi:hover {
+    color:#6e5494
+}
+
+#email:hover {
+    color:#3C5A99
+}
+
+#iconli:hover {
+    color:#0077b5
+}
+
+#iconfb:hover {
+    color:#3C5A99
+}
+
+#iconsc:hover {
+    color:#ff7700
+}
+
+@media screen and (max-width: 1200px) {
+  #introtext {
+      font-size: 11px
+  }
+
+  #introhead{
+      font-size: 14px
+  }
+
+  #contenthead{
+      margin-top: 5px;
+      margin-bottom:5px;
+      font-size: 18px
+  }
+
+  #contentheadme{
+      margin-top: 5px;
+      margin-bottom:5px;
+      font-size: 18px
+  }
+
+  .content{
+      height:150.900px
+  }
+
+  .contenttext{
+      height:150.900px
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+#introtext {
+    margin-bottom: 5px
+}
+
+#introhead{
+    margin-bottom: 5px
+}
+
+#icongi{
+    display: none;
+}
+
+#iconfb{
+    display: none;
+}
+
+#iconsc{
+    display: none;
+}
+
+#iconli{
+    display: none;
+}
+
+.content{
+    height:106.325px
+}
+.contenttext{
+    height:106.325px
+}
+
+}
+
+
+
+</style>
+</html>
