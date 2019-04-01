@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Carbonprint</title>
+  <title>Rasterizer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -37,25 +37,25 @@
     <div class="col-sm-8" style="background-color:white;">
       <div class="col-sm-3">
         <div id="introtext" class="content" style="width:100%;background-color:#ffa726;margin-bottom:20px;margin-top:20px;">
-          <p style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Carbonprint</b></p>
-          <p id ="iconspan"style="text-align:center;"><i id ="icon" class="fas fa-cloud" style="color:white;"></i></p>
+          <p style="text-align:center;padding:2px;color:white;font-family: 'Open Sans', sans-serif;"><b>Rasterizer</b></p>
+          <p id ="iconspan"style="text-align:center;"><i id ="icon" class="fas fa-laptop-code" style="color:white;"></i></p>
         </div>
       </div>
       <div class="col-sm-9">
-        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;">Carbonprint</h3>
-        <p id="introtext" style="font-family: 'Open Sans', sans-serif;"><b>A website for calculating CO2 emission from a dish</b></br>
+        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;">Rasterizer</h3>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;"><b>rasterizer build in c++</b></br>
 Bachelor thesis project in Media Technology
 </br>
         </p>
         <p id="introtext" style="font-family: 'Open Sans', sans-serif;">
-          URL:
-          <a href="https://carbonprint-1c5bd.firebaseapp.com/#!/home" style="color:#ffa726">Carbonprint</a>
+          Git:
+          <a href="https://github.com/Sayaja/Rasterizer" style="color:#ffa726">Rasterizer</a>
                   <br/>
                   Role: Developer
                   <br/>
-                  For: Examensarbete inom medieteknik, grundnivå DM128X
+                  For: DH2323 Computer Graphics and Interaction KTH
                   <br/>
-                  Date: 2017-06-12
+                  Date: 2018-05-05
         </p>
       </div>
 
@@ -96,13 +96,20 @@ Bachelor thesis project in Media Technology
         <div class="col-sm-12">
         <div style="width:100%;margin-bottom:5px;margin-top:15px;padding-top:2px;">
           <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;margin-top:0px;">About</h3>
-        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">Carbonprint was created for private persons and restaurants to easily calculate CO2 emissions of a dish. The project was part of my bachelor thesis where we wanted to evaluate nudging as a method
-          to make restaurant visitors make more environmental friendly food decisions.
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">The Rasterizer is a group project with me and Axel Weinz. The scene is built from scratch in C++ and the challange for us was to create a Clipping and Shadow mapping algorithm.</br>
+          The simplest technique for creating shadows in a computer graphics scene is by implementing a raytracer that detects collision with an object and creates a shadow based on that for every frame. </br>
+          Real-time ray tracing is very computation heavy and thus Shadow mapping is used as an alternative, shadow mapping is more difficult to code but is much less computation heavy.
         </p>
-        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">The current version is made with Angular, the website is getting a remake in 2019 made in React.
-        </p>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">In a shadowmapping algorithm, shadows are created by testing whether a pixel is visible from the light source, by comparing the pixel to a z-buffer or depth image of the light source's view.  </p>
+        <p id="introtext" style="font-family: 'Open Sans', sans-serif;">To make the shadowmapping algorithm we also had to implement a clipping algorithm so that the application doesnt crash when the camera is out of bound, this is needed since the light source view in most cases are out of bound. </p>
         <div style="margin-top: 4px;margin-bottom:10px;height: 2px;width:100%;background-color:#ffa726;"></div>
-        <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">Angular.js</span></button> <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">JavaScript</span></button>
+        <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">C++</span></button> <button><span id="introtext" style="font-family: 'Open Sans', sans-serif;">Visual Studio</span></button>
+        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;margin-top:20px;">Before</h3>
+        <img src="rasterizer1.PNG" alt="rasterizer1" style="width:100%;margin-top:10px;margin-bottom:20px;">
+        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;margin-top:20px;">With Shadowmapping</h3>
+        <img src="rasterizer2.PNG" alt="rasterizer1" style="width:100%;margin-top:10px;margin-bottom:20px;">
+        <h3 id="introhead"style="font-family: 'Open Sans', sans-serif;margin-top:20px;">Clipping algorithm results</h3>
+        <img src="rasterizer3.PNG" alt="rasterizer3" style="width:100%;margin-top:10px;margin-bottom:20px;">
       </div>
     </div>
 
